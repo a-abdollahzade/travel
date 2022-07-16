@@ -1,0 +1,45 @@
+.selects {
+    background-color: black;
+    height: 115vh;
+}
+
+.views-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 20px 30px;
+}
+
+.selects h1{
+    color: white;
+    text-align: left;
+}
+
+.container-views {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 740px) {
+    .selects {
+        height: 175vh;
+    }
+    
+    .container-views {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .selects {
+        height: 313vh;
+    }
+    
+    .container-views {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
